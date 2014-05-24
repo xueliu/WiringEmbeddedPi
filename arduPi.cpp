@@ -1392,16 +1392,17 @@ uint32_t* mapmem(const char *msg, size_t size, int fd, off_t off)
     return map;
 }
 
+// Embedded Pi Pin remap
 int raspberryPinNumber(int arduinoPin){
 	switch(arduinoPin){
-		case 2: return 18; break;
-		case 3: return 23; break;
-		case 4: return 24; break;
-		case 5: return 25; break;
-		case 6: return  4; break;
-		case 7: return 17; break;
-		case 8: if(REV == 1){return 21;}else{return 27;} break;
-		case 9: return 22; break;
+		case 2: return 17; break;
+		case 3: return 18; break;
+		case 4: return 21; break;
+		case 5: return 22; break;
+		case 6: return 23; break;
+		case 7: return 24; break;
+		case 8: return 25; break;
+		case 9: return  4; break;
 		case 10: return 8; break;
 		case 11: return 10; break;
 		case 12: return 9; break;
