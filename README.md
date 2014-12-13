@@ -16,6 +16,6 @@ If you have already install the WiringEmbeddedPi library (previous step) you can
 ```bash
 g++ -lrt -lpthread -lwiringEPi my_program.cpp -o my_program
 ```  
-The **-lwiringEPit** flag denotes that the ld will find WiringEmbeddedPi library
+The **-lwiringEPit** flag denotes that the ld will find WiringEmbeddedPi library.   
 The **-lrt** flag is necesary because the library uses the function *clock_gettime* (time.h).   
 The **-lpthread** option is needed because *attachInterrupt()* and *detachInterrupt()* functions use threads.
