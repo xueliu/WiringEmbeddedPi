@@ -44,7 +44,7 @@ LIBS    =
 # Should not alter anything below this line
 ###############################################################################
 
-SRC	=	arduPi.cpp
+SRC	=	wiringEmbeddedPi.cpp
 
 OBJ	=	$(SRC:.cpp=.o)
 
